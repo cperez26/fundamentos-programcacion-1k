@@ -5,18 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Fundamentos de HTML</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+    <link href="Estilo.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
 <body>
     <h1>Elementos basicos de HTML</h1>
     <p>en esta pagina se muestran ejemplos de los principales elementos para estructurar el contenido de una pagina web </p>
     <h2>Encabezados</h2>
-    <p>existen 6 niveles y se debe de respetar el orden en el que se presentan</p>
-    <h2>Listas</h2>
+    <p id="niveles">
+        existen 6 niveles y se debe de respetar el orden en el que se presentan</p>
+    <h2 class="sin-borde">Listas</h2>
     <h3>Listas desordenadas</h3>
     <ul>
-        <li>C++</li>
-        <LI>c#</LI>
-        <li>Java</li>
+        <li class="sin-borde">C++</li>
+        <LI class="sin-borde">c#</LI>
+        <li class="sin-borde">Java</li>
     </ul>
 
     <h3>Listas ordenadas</h3>
@@ -50,7 +52,7 @@
     <form>
         <div>
             <label for="Nombre">Nombre</label>
-            <input type="text" id="Nombre"/>
+            <input type="text" id="Nombre" maxlength="10" size="50"/>
         </div>
         <div>
             <label for="email">Email: </label>
@@ -59,6 +61,10 @@
         <div>
             <label for="Comentarios">Comentarios</label>
             <textarea id="Comentarios"></textarea>
+        </div>
+        <div>
+            <label for="color">elige un color: </label>
+            <input type="color" id="color" />
         </div>
         <div>
             <button id="enviar">enviar</button>
